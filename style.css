@@ -1,6 +1,9 @@
 body{
     background-color:brown;
 }
+p{
+    text-align: center;
+}
 .container{
     background-color:bisque;
     width: 40%;
