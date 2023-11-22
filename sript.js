@@ -7,9 +7,14 @@ function addTo(){
     list.appendChild(item);
     toInput.value = "";
     item.addEventListener("click",() => {
-        item.style.textDecoration = 'line-through'
+        if (item.style.textDecoration === 'none') {
+            item.style.textDecoration = 'line-through'
+        } else {
+            item.style.textDecoration = 'none'
+        }
+        
     })
-    }
+}
 
 function clearall(){
    const list = document.getElementById("todo-container");
